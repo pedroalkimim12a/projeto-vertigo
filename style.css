@@ -111,9 +111,13 @@ h1{
 }
 
 @media(min-width: 1800px){
+    body{
+        display: flex;
+    }
     header{
         background: none;
         justify-content: flex-start;
+        margin: 2.5rem 7rem 7 rem;
     }
 
     header img{
@@ -122,5 +126,12 @@ h1{
     main{
         padding-inline:7rem ;
     }
+    .conteudo{
+        width: 100%;
+    }
 
+    .bg-desktop{
+        display: block;
+        width: 100%;
+    }
 }
