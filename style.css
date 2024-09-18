@@ -10,6 +10,7 @@
     --gray-400: #94a3b8;
     --gray-200: #e2e8f0;
     --purple:   #7c3aed;
+    --white-: #fff;
     
 }
 
@@ -38,11 +39,13 @@ main{
 .descricao.p{
     font-size: 0.8125rem;
     color: var(--gray-600)
+    
 }
 .login label{
    font-size: 0.875rem; 
    color: var(--gray-800);
    font-weight: 600;
+   
 }
 
 .login input{
@@ -53,6 +56,10 @@ main{
 }
 .login input::placeholder{
   color: var(--gray-400);  
+}
+.login input:hover,
+.login input:focus {
+    outline: 1px solid color var(--purple)
 }
 .login a{
     color: var(--purple);
@@ -69,10 +76,24 @@ text-decoration: underline;
     margin-bottom:1rem ;
     gap: 0.5rem;
     border: 1px solid;
+    border: none;
+
 }
 .input-box div{
     display: flex;
     justify-content: space-between;
+}
+.login button{
+    margin-top: 2rem;
+    padding-block:1rem ;
+    width: 100%;
+    background:var(--purple) ;
+    border: none;
+    border-radius:0.25rem ;
+
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--white-);
 }
 h1{
     font-size: 2rem;
